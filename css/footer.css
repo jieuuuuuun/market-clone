@@ -12,9 +12,24 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
+@keyframes icon-둥-둥 {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .footer-icon__img {
   width: 30px;
 }
+
 .footer-icon {
   font-size: 7px;
   font-weight: bold;
@@ -27,4 +42,8 @@ footer {
 }
 .footer-icon__desc {
   margin-top: 5px;
+}
+
+.footer-icon:hover .footer-icon__img {
+  animation: 2s icon-둥-둥;
 }
